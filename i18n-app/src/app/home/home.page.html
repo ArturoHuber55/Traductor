@@ -1,0 +1,53 @@
+<ion-content class="ion-padding main-content">
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-icon">🌐</div>
+    <h1 class="hero-title">{{ 'HOME.TITLE' | translate }}</h1>
+    <p class="hero-description">{{ 'HOME.DESCRIPTION' | translate }}</p>
+  </div>
+
+  <!-- Language Selector -->
+  <div class="selector-wrapper">
+    <ion-item lines="none" class="selector-item">
+      <ion-icon name="language-outline" slot="start" class="selector-icon"></ion-icon>
+      <ion-select
+        [value]="currentLang"
+        (ionChange)="onLanguageChange($event)"
+        interface="popover"
+        [label]="'HOME.LANGUAGE_SELECTOR' | translate"
+        label-placement="stacked"
+        class="lang-select"
+      >
+        @for (lang of languages; track lang.code) {
+          <ion-select-option [value]="lang.code">
+            {{ lang.flag }}  {{ lang.labelKey | translate }}
+          </ion-select-option>
+        }
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <!-- Status Pill -->
+  <div class="status-row">
+    @if (currentLang === 'es') {
+      <span class="status-pill es">🇲🇽 {{ 'HOME.STATUS' | translate }}</span>
+    }
+    @if (currentLang === 'en') {
+      <span class="status-pill en">🇺🇸 {{ 'HOME.STATUS' | translate }}</span>
+    }
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="actions">
+    <button class="btn btn-primary">
+      <ion-icon name="log-in-outline"></ion-icon>
+      {{ 'HOME.BUTTON_LOGIN' | translate }}
+    </button>
+    <button class="btn btn-secondary">
+      <ion-icon name="person-add-outline"></ion-icon>
+      {{ 'HOME.BUTTON_REGISTER' | translate }}
+    </button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,177 @@
+/* ===== Global Page ===== */
+.main-content {
+  --background: #fafafa;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 56px 24px 32px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.hero-icon {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+.hero-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+}
+
+.hero-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #6b7280;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* ===== Language Selector ===== */
+.selector-wrapper {
+  max-width: 360px;
+  margin: 8px auto 24px;
+  animation: fadeInUp 0.5s ease-out 0.15s both;
+}
+
+.selector-item {
+  --background: #ffffff;
+  --border-radius: 14px;
+  --padding-start: 16px;
+  --padding-end: 8px;
+  --min-height: 56px;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.selector-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.selector-icon {
+  color: #6366f1;
+  font-size: 1.3rem;
+}
+
+.lang-select {
+  --color: #1a1a2e;
+  font-weight: 500;
+}
+
+/* ===== Status Pill ===== */
+.status-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: fadeIn 0.4s ease-out 0.3s both;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.status-pill:hover {
+  transform: scale(1.04);
+}
+
+.status-pill.es {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.status-pill.en {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+/* ===== Action Buttons ===== */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 4px;
+  animation: fadeInUp 0.5s ease-out 0.4s both;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 14px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.2px;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn ion-icon {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #1a1a2e;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

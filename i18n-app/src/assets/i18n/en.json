@@ -1,0 +1,12 @@
+{
+  "HOME": {
+    "TITLE": "Multilingual App",
+    "DESCRIPTION": "This application demonstrates how to implement i18n using @ngx-translate in an Ionic app with Angular standalone components. We use the new @if and @for syntax.",
+    "BUTTON_LOGIN": "Log In",
+    "BUTTON_REGISTER": "Register",
+    "LANGUAGE_SELECTOR": "Select Language",
+    "STATUS": "Current language is English",
+    "LANGUAGE_ES": "Spanish",
+    "LANGUAGE_EN": "English"
+  }
+}
