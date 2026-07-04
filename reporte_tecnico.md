@@ -32,6 +32,7 @@ El uso de archivos `.json` como diccionarios de i18n se ha estandarizado globalm
 *   **Integración con Herramientas (TMS):** Las plataformas modernas de gestión de traducciones (*Translation Management Systems* como Lokalise, Crowdin, o POEditor) importan y exportan archivos JSON de forma nativa. Esto permite que traductores no técnicos editen los textos sin interactuar con el código fuente del proyecto.
 
 ---
-###Capturas
+Capturas
 <img width="956" height="463" alt="image" src="https://github.com/user-attachments/assets/59498564-ded0-417d-b52f-51cd927c8b6f" />
+
 
