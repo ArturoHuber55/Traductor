@@ -33,6 +33,10 @@ El uso de archivos `.json` como diccionarios de i18n se ha estandarizado globalm
 
 ---
 Capturas
+Ingles:
 <img width="956" height="463" alt="image" src="https://github.com/user-attachments/assets/59498564-ded0-417d-b52f-51cd927c8b6f" />
+Español:
+<img width="958" height="471" alt="Captura de pantalla 2026-07-04 140017" src="https://github.com/user-attachments/assets/8fc86eb5-2c90-43f9-9307-31086b130b9a" />
+
 
 
