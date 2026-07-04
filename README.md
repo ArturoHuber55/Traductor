@@ -4,22 +4,14 @@ Este es el proyecto correspondiente a la Práctica de Laboratorio de Implementac
 
 ## Requisitos
 
-- Node.js (versión LTS recomendada)
+- Node.js 
 - Ionic CLI (`npm install -g @ionic/cli`)
 
-## Instalación y Ejecución
 
-1. Clona el repositorio o navega a la carpeta del proyecto.
-2. Abre una terminal y colócate en la raíz del proyecto (`cd i18n-app` o la ruta correspondiente).
-3. Instala las dependencias:
-   ```bash
-   npm install
-   ```
 4. Levanta el servidor de desarrollo local:
    ```bash
    ionic serve
    ```
-5. Abre el navegador en `http://localhost:8100` (esto se hace automáticamente).
 
 ## Tecnologías Utilizadas
 
